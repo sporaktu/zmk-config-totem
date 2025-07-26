@@ -1,0 +1,56 @@
+#include <physical_layouts.dtsi>
+
+  / {
+    yellowjacket_layout: yellowjacket_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+
+        keys  //                     w   h    x    y     rot    rx    ry
+        = <&key_physical_attrs 100 100  135  190 (-1000)   100   130>
+        , <&key_physical_attrs 100 100  270  150  (-500)   100   130>
+        , <&key_physical_attrs 100 100  400  159       0     0     0>
+        , <&key_physical_attrs 100 100  500  172       0     0     0>
+        , <&key_physical_attrs 100 100  800  172       0     0     0>
+        , <&key_physical_attrs 100 100  900  159       0     0     0>
+        , <&key_physical_attrs 100 100 1030   60     500   100   130>
+        , <&key_physical_attrs 100 100 1150    0    1000   100   130>
+        , <&key_physical_attrs 100 100    0  380 (-1500)   100   130>
+        , <&key_physical_attrs 100 100  135  290 (-1000)   100   130>
+        , <&key_physical_attrs 100 100  270  250  (-500)   100   130>
+        , <&key_physical_attrs 100 100  400  259       0     0     0>
+        , <&key_physical_attrs 100 100  500  272       0     0     0>
+        , <&key_physical_attrs 100 100  800  272       0     0     0>
+        , <&key_physical_attrs 100 100  900  259       0     0     0>
+        , <&key_physical_attrs 100 100 1030  160     500   100   130>
+        , <&key_physical_attrs 100 100 1150  100    1000   100   130>
+        , <&key_physical_attrs 100 100 1265   80    1500   100   130>
+        , <&key_physical_attrs 100 100    0  480 (-1500)   100   130>
+        , <&key_physical_attrs 100 100  135  390 (-1000)   100   130>
+        , <&key_physical_attrs 100 100  270  350  (-500)   100   130>
+        , <&key_physical_attrs 100 100  400  359       0     0     0>
+        , <&key_physical_attrs 100 100  500  372       0     0     0>
+        , <&key_physical_attrs 100 100  800  372       0     0     0>
+        , <&key_physical_attrs 100 100  900  359       0     0     0>
+        , <&key_physical_attrs 100 100 1030  260     500   100   130>
+        , <&key_physical_attrs 100 100 1150  200    1000   100   130>
+        , <&key_physical_attrs 100 100 1265  180    1500   100   130>
+        , <&key_physical_attrs 100 100  430  485    1500   530   585>
+        , <&key_physical_attrs 100 100  530  485    3000   530   585>
+        , <&key_physical_attrs 100 100  770  485 (-3000)   870   585>
+        , <&key_physical_attrs 100 100  870  485 (-1500)   870   585>
+        ;
+    };
+
+    splitkb_yellowjacket_position_map {
+        compatible = "zmk,physical-layout-position-map";
+        complete;
+        default {
+            physical-layout = <&yellowjacket_layout>;
+            positions =
+                <     0  1  2  3          4  5  6  7   >,
+                <  8  9 10 11 12         13 14 15 16 17>,
+                < 18 19 20 21 22         23 24 25 26 27>,
+                <             28 29   30 31            >;
+        };
+    };
+};

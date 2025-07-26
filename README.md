@@ -114,5 +114,63 @@ docker run -it --rm -v C:\Projects\keyboards\zmk-config-totem\config:/workspaces
 This configuration includes:
 - QWERTY layout with homerow mods
 - Hold X for system/adjust layer
-- Optimized timing for homerow mods (150ms tap term)
+- Optimized timing for homerow mods (250ms tap term)
 - Layer tap on Tab (NAV), Escape (SYM), and X (ADJ)
+
+### Base Layer (QWERTY)
+```
+             Q  W  E  R  T      Y  U  I  O  P
+             A  S  D  F  G      H  J  K  L  ;
+          Q  Z  X  C  V  B      N  M  ,  .  /  \
+                   DEL TAB SPC  RET ESC BSPC
+```
+
+### Homerow Mods
+- A: GUI (Win/Cmd)
+- S: Alt
+- D: Ctrl
+- F: Shift
+- J: Shift
+- K: Ctrl
+- L: Alt
+- ;: GUI (Win/Cmd)
+
+### Layer Keys
+- Hold TAB: Navigation layer (NAV)
+- Hold ESC: Symbol layer (SYM)
+- Hold X: Adjust/System layer (ADJ)
+
+### Combos
+- Q+W: ESC
+- A+S: Q
+- L+;: P
+- S+D+F: Toggle TVP layer
+
+### Navigation Layer (NAV)
+```
+           ESC CLR ↑  =  [      ]  7  8  9  +
+           SFT ←  ↓  →  [      ]  4  5  6  -
+         Q DEL PGU CPS PGD (      )  1  2  3  *
+                   ___ TAB SPC  ADJ 0  ___
+```
+
+### Symbol Layer (SYM)
+```
+           !  @  #  $  %      ^  &  Ü  '  "
+           Ä  _  ß  _  _      MUTE ¥  €  £  Ö
+         _ @1 @2  _  _  _      VOL- VOL+ PREV NEXT \ _
+                   ___ GIF ADJ  ___ PLAY ___
+```
+
+### Adjust Layer (ADJ)
+```
+           RST CLR OUT _  _      _  F7 F8 F9 F12
+           BOOT NXT _  _  _      _  F4 F5 F6 F11
+         _ _  PRV _  _  _      _  F1 F2 F3 F10 _
+                   ___ ___ ___  ___ ___ ___
+```
+
+### Bluetooth Controls (ADJ Layer)
+- Hold X+W: Clear all Bluetooth profiles
+- Hold X+Q: Connect to Bluetooth profile 0
+- Hold X+E: Toggle between USB and Bluetooth output
