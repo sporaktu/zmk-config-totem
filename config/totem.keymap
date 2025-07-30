@@ -258,7 +258,7 @@
 
         gaming {
             bindings = <
-        &kp TAB   &kp A  &kp W      &kp D      &kp R     &trans  &trans  &trans  &trans  &trans
+        &kp TAB   &kp A  &kp W      &kp D      &kp E     &trans  &trans  &trans  &trans  &trans
         &kp LALT  &kp Q  &kp S      &kp R      &kp F     &trans  &trans  &trans  &trans  &trans
 &trans  &trans    &kp Z  &kp X      &kp C      &kp G     &trans  &trans  &trans  &trans  &trans  &trans
                          &kp LCTRL  &kp LSHFT  &trans    &trans  &trans  &trans
