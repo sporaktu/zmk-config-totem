@@ -94,22 +94,10 @@
             bindings = <&mo 8>;
             key-positions = <20 22>;
         };
-    };
 
-    macros {
-        gif: gif {
-            label = "giphy";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
+        delete {
+            bindings = <&kp DEL>;
+            key-positions = <33 37>;
         };
     };
 
