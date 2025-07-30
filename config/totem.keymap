@@ -75,7 +75,7 @@
         };
 
         to_gaming {
-            bindings = <&to 4>;
+            bindings = <&to 6>;
             key-positions = <20 21>;
         };
     };
