@@ -89,6 +89,11 @@
             bindings = <&kp MINUS>;
             key-positions = <25 26>;
         };
+
+        system_layer {
+            bindings = <&mo 8>;
+            key-positions = <20 22>;
+        };
     };
 
     macros {
@@ -132,7 +137,7 @@
             bindings = <
              &kp Q       &kp W       &kp E        &kp R             &kp T        &kp Y      &kp U        &kp I            &kp O       &kp P
              &hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHFT F       &kp G        &kp H      &hm RSHFT J  &hm RCTRL K      &hm RALT L  &hm RGUI SEMI
-&lt 7 GRAVE  &kp Z       &lt 8 X     &kp C        &kp V             &kp B        &kp N      &kp M        &kp COMMA        &kp DOT     &kp FSLH       &kp BSLH
+&lt 7 GRAVE  &kp Z       &kp X       &kp C        &kp V             &kp B        &kp N      &kp M        &kp COMMA        &kp DOT     &kp FSLH       &kp BSLH
                                      &lt 5 TAB    &lt 6 LEFT_SHIFT  &kp SPACE    &kp SPACE  &lt 1 RET    &lt 2 BACKSPACE
             >;
         };
