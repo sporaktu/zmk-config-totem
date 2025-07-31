@@ -92,12 +92,25 @@
 
         system_layer {
             bindings = <&mo 8>;
-            key-positions = <20 22>;
+            key-positions = <20 31 30>;
         };
 
         delete {
             bindings = <&kp DEL>;
             key-positions = <33 37>;
+        };
+    };
+
+    macros {
+        delete: delete {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LSHFT &kp BACKSPACE>,
+                <&macro_press>;
+
+            label = "DELETE";
         };
     };
 
