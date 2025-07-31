@@ -118,11 +118,7 @@
         delete: delete {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT &kp BACKSPACE>,
-                <&macro_press>;
-
+            bindings = <&macro_tap &kp LS(BACKSPACE)>;
             label = "DELETE";
         };
     };
