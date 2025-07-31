@@ -12,9 +12,11 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/mouse.h>
 
 #define BASE 0
 #define NAV  1
@@ -22,6 +24,17 @@
 #define ADJ  3
 #define TVP1 4
 #define TVP2 5
+
+#define B0     BT_SEL 0
+#define B1     BT_SEL 1
+#define B2     BT_SEL 2
+#define B3     BT_SEL 3
+#define B4     BT_SEL 4
+#define B5     BT_SEL 5
+#define OTGL   out OUT_TOG
+#define BT_C   BT_CLR
+#define BT_C_A BT_CLR_ALL
+
 
 &mt {
     quick-tap-ms = <0>;
