@@ -10,13 +10,12 @@
 //
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/mouse.h>
 
 #define BASE 0
 #define NAV  1
@@ -24,7 +23,6 @@
 #define ADJ  3
 #define TVP1 4
 #define TVP2 5
-
 #define B0     BT_SEL 0
 #define B1     BT_SEL 1
 #define B2     BT_SEL 2
@@ -34,7 +32,6 @@
 #define OTGL   out OUT_TOG
 #define BT_C   BT_CLR
 #define BT_C_A BT_CLR_ALL
-
 
 &mt {
     quick-tap-ms = <100>;
@@ -62,25 +59,19 @@
 
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <0 1>;
+            key-positions = <1 2>;
             bindings = <&kp ESC>;
-        };
-
-        combo_tvp {
-            timeout-ms = <100>;
-            key-positions = <11 12 13>;
-            bindings = <&tog 0>;
         };
 
         combo_q {
             timeout-ms = <50>;
-            key-positions = <10 11>;
+            key-positions = <1 0>;
             bindings = <&kp Q>;
         };
 
         combo_p {
             timeout-ms = <50>;
-            key-positions = <18 19>;
+            key-positions = <8 9>;
             bindings = <&kp P>;
         };
 
@@ -97,7 +88,7 @@
 
         quote {
             bindings = <&kp SQT>;
-            key-positions = <28 29>;
+            key-positions = <18 19>;
         };
 
         dash {
@@ -120,7 +111,8 @@
         delete: delete {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp LS(BACKSPACE)>;
+            bindings = <&macro_tap>, <&kp LS(BACKSPACE)>;
+
             label = "DELETE";
         };
     };
