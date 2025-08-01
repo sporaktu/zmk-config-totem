@@ -44,17 +44,17 @@
     require-prior-idle-ms = <125>;
 };
 
-// Configure mouse movement for linear, immediate response
+// Configure mouse movement for quick response with acceleration
 &mmv {
-    acceleration-exponent = <0>;  // Linear movement (no acceleration)
-    time-to-max-speed-ms = <0>;   // Immediate response
-    delay-ms = <0>;               // No delay before movement starts
+    acceleration-exponent = <1>;      // Mild acceleration curve
+    time-to-max-speed-ms = <300>;     // Quick acceleration to max speed
+    delay-ms = <0>;                   // No delay before movement starts
 };
 
 &msc {
-    acceleration-exponent = <0>;  // Linear scrolling
-    time-to-max-speed-ms = <0>;   // Immediate response  
-    delay-ms = <0>;               // No delay before scrolling starts
+    acceleration-exponent = <1>;      // Mild acceleration for scrolling
+    time-to-max-speed-ms = <200>;     // Quick acceleration for scroll
+    delay-ms = <0>;                   // No delay before scrolling starts
 };
 
 / {
