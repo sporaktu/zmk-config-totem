@@ -15,6 +15,9 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+// Set mouse movement speed before including pointing.h
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/mouse.h>
 
@@ -42,6 +45,19 @@
     flavor = "tap-preferred";
     tapping-term-ms = <135>;
     require-prior-idle-ms = <125>;
+};
+
+// Configure mouse movement for linear, immediate response
+&mmv {
+    acceleration-exponent = <0>;  // Linear movement (no acceleration)
+    time-to-max-speed-ms = <0>;   // Immediate response
+    delay-ms = <0>;               // No delay before movement starts
+};
+
+&msc {
+    acceleration-exponent = <0>;  // Linear scrolling
+    time-to-max-speed-ms = <0>;   // Immediate response  
+    delay-ms = <0>;               // No delay before scrolling starts
 };
 
 / {
