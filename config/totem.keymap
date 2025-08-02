@@ -101,6 +101,16 @@
             bindings = <&kp DEL>;
             key-positions = <33 37>;
         };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <19 31>;
+        };
+
+        delete {
+            bindings = <&kp DEL>;
+            key-positions = <31 19 18>;
+        };
     };
 
     macros {
@@ -172,7 +182,7 @@
         gaming_num {
             bindings = <
         &trans  &kp A   &kp W   &kp D   &kp N1    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &kp S   &kp M   &kp N2    &trans  &trans  &trans  &trans  &trans
+        &trans  &kp V   &kp S   &kp M   &kp N2    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &kp B   &kp N   &kp N3    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
