@@ -104,24 +104,28 @@
             bindings = <&kp LGUI>;
             key-positions = <10 32>;  // A + left space
             timeout-ms = <50>;
+            layers = <0>;  // Only on base layer
         };
 
         left_alt {
             bindings = <&kp LALT>;
             key-positions = <11 32>;  // S + left space
             timeout-ms = <50>;
+            layers = <0>;  // Only on base layer
         };
 
         left_ctrl {
             bindings = <&kp LCTRL>;
             key-positions = <12 32>;  // D + left space
             timeout-ms = <50>;
+            layers = <0>;  // Only on base layer
         };
 
         left_shift {
             bindings = <&kp LSHFT>;
             key-positions = <13 32>;  // F + left space
             timeout-ms = <50>;
+            layers = <0>;  // Only on base layer
         };
 
         // Right hand modifiers with right space
@@ -129,24 +133,28 @@
             bindings = <&kp RSHFT>;
             key-positions = <16 33>;  // J + right space
             timeout-ms = <50>;
+            layers = <0>;  // Only on base layer
         };
 
         right_ctrl {
             bindings = <&kp RCTRL>;
             key-positions = <17 33>;  // K + right space
             timeout-ms = <50>;
+            layers = <0>;  // Only on base layer
         };
 
         right_alt {
             bindings = <&kp RALT>;
             key-positions = <18 33>;  // L + right space
             timeout-ms = <50>;
+            layers = <0>;  // Only on base layer
         };
 
         right_gui {
             bindings = <&kp RGUI>;
             key-positions = <19 33>;  // ; + right space
             timeout-ms = <50>;
+            layers = <0>;  // Only on base layer
         };
     };
 
