@@ -100,59 +100,61 @@
         };
 
         // Left hand modifiers with left space
+
         left_gui {
             bindings = <&kp LGUI>;
-            key-positions = <10 32>;  // A + left space
+            key-positions = <10 34>;  // A + left space
             timeout-ms = <50>;
             layers = <0>;  // Only on base layer
         };
 
         left_alt {
             bindings = <&kp LALT>;
-            key-positions = <11 32>;  // S + left space
+            key-positions = <11 34>;  // S + left space
             timeout-ms = <50>;
             layers = <0>;  // Only on base layer
         };
 
         left_ctrl {
             bindings = <&kp LCTRL>;
-            key-positions = <12 32>;  // D + left space
+            key-positions = <12 34>;  // D + left space
             timeout-ms = <50>;
             layers = <0>;  // Only on base layer
         };
 
         left_shift {
             bindings = <&kp LSHFT>;
-            key-positions = <13 32>;  // F + left space
+            key-positions = <13 34>;  // F + left space
             timeout-ms = <50>;
             layers = <0>;  // Only on base layer
         };
 
         // Right hand modifiers with right space
+
         right_shift {
             bindings = <&kp RSHFT>;
-            key-positions = <16 33>;  // J + right space
+            key-positions = <16 35>;  // J + right space
             timeout-ms = <50>;
             layers = <0>;  // Only on base layer
         };
 
         right_ctrl {
             bindings = <&kp RCTRL>;
-            key-positions = <17 33>;  // K + right space
+            key-positions = <17 35>;  // K + right space
             timeout-ms = <50>;
             layers = <0>;  // Only on base layer
         };
 
         right_alt {
             bindings = <&kp RALT>;
-            key-positions = <18 33>;  // L + right space
+            key-positions = <18 35>;  // L + right space
             timeout-ms = <50>;
             layers = <0>;  // Only on base layer
         };
 
         right_gui {
             bindings = <&kp RGUI>;
-            key-positions = <19 33>;  // ; + right space
+            key-positions = <19 35>;  // ; + right space
             timeout-ms = <50>;
             layers = <0>;  // Only on base layer
         };
@@ -190,10 +192,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-             &kp Q       &kp W    &kp E     &kp R             &kp T        &kp Y      &kp U     &kp I         &kp O       &kp P
-             &kp A       &kp S    &kp D     &kp F             &kp G        &kp H      &kp J     &kp K         &kp L       &kp SEMI
-&lt 7 GRAVE  &kp Z       &kp X    &kp C     &kp V             &kp B        &kp N      &kp M     &kp COMMA     &kp DOT     &kp FSLH    &kp BSLH
-                                  &lt 5 TAB  &lt 6 LEFT_SHIFT  &kp SPACE    &kp SPACE  &lt 1 RET  &lt 2 BACKSPACE
+             &kp Q  &kp W  &kp E      &kp R             &kp T        &kp Y      &kp U      &kp I            &kp O    &kp P
+             &kp A  &kp S  &kp D      &kp F             &kp G        &kp H      &kp J      &kp K            &kp L    &kp SEMI
+&lt 7 GRAVE  &kp Z  &kp X  &kp C      &kp V             &kp B        &kp N      &kp M      &kp COMMA        &kp DOT  &kp FSLH  &kp BSLH
+                           &lt 5 TAB  &lt 6 LEFT_SHIFT  &kp SPACE    &kp SPACE  &lt 1 RET  &lt 2 BACKSPACE
             >;
         };
 
