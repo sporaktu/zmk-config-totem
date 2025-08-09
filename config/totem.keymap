@@ -158,6 +158,12 @@
             timeout-ms = <50>;
             layers = <0>;  // Only on base layer
         };
+
+        activate-gaming {
+            bindings = <&to 3>;
+            key-positions = <1 2 3 34>;
+            layers = <0>;
+        };
     };
 
     macros {
