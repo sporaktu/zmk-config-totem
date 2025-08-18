@@ -178,7 +178,14 @@
         alt_tab: alt_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LALT>, <&macro_tap &kp TAB>, <&macro_release &kp LALT>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_release>,
+                <&kp LALT>;
+
             label = "ALT_TAB";
         };
     };
@@ -250,10 +257,10 @@
 
         symbol {
             bindings = <
-        &trans  &trans  &trans  &kp LS(LBRC)          &kp LS(RBRC)             &kp N7        &kp N8  &kp N9  &kp EQUAL  &kp MINUS
-        &trans  &trans  &trans  &kp LBKT              &kp RBKT                 &kp N4        &kp N5  &kp N6  &kp MINUS  &trans
-&trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp NUMBER_1  &kp N2  &kp N3  &kp ENTER  &trans     &trans
-                        &trans  &trans                &trans                   &trans        &trans  &kp N0
+        &alt_tab  &trans  &trans  &kp LS(LBRC)          &kp LS(RBRC)             &kp N7        &kp N8  &kp N9  &kp EQUAL  &kp MINUS
+        &trans    &trans  &trans  &kp LBKT              &kp RBKT                 &kp N4        &kp N5  &kp N6  &kp MINUS  &trans
+&trans  &trans    &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp NUMBER_1  &kp N2  &kp N3  &kp ENTER  &trans     &trans
+                          &trans  &trans                &trans                   &trans        &trans  &kp N0
             >;
         };
 
