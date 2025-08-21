@@ -6,26 +6,34 @@
 - Commit and push the changes to trigger GitHub Actions build
 - Download and flash the new firmware with debug logging enabled
 
-### 2. Connect via USB and Capture Logs
+### 2. Connect via RTT (Real-Time Transfer) for Debug Logs
 
-#### Windows (PuTTY)
-1. Install PuTTY if not already installed
-2. Open Device Manager to find COM port number (e.g., COM3)
-3. Open PuTTY:
-   - Connection type: Serial
-   - Serial line: COM3 (or your port)
-   - Speed: 115200
-4. Click "Open" and logs will appear
+**Note:** The Seeeduino XIAO BLE uses RTT logging instead of USB serial logging.
 
-#### macOS/Linux (screen)
-1. Find the device: `ls /dev/tty.*` or `ls /dev/ttyACM*`
-2. Connect: `screen /dev/tty.usbmodem14401 115200` (adjust device name)
-3. To exit screen: `Ctrl-A` then `K` then `Y`
+#### Using J-Link RTT Viewer (Recommended)
+1. Install [J-Link Software](https://www.segger.com/downloads/jlink/)
+2. Connect a J-Link debugger to the SWD pins on the XIAO BLE
+3. Open J-Link RTT Viewer
+4. Connect to the target device
+5. Logs will appear in real-time
 
-#### Alternative: tio (recommended)
-1. Install tio: `brew install tio` (macOS) or `sudo apt install tio` (Linux)
-2. Connect: `tio /dev/ttyACM0` or `tio /dev/tty.usbmodem*`
-3. To exit: `Ctrl-T` then `Q`
+#### Alternative: OpenOCD with RTT
+1. Install OpenOCD with RTT support
+2. Create config file for nRF52840:
+```
+source [find interface/jlink.cfg]
+transport select swd
+source [find target/nrf52.cfg]
+rtt setup 0x20000000 0x10000 "SEGGER RTT"
+rtt start
+rtt server start 9090 0
+```
+3. Connect: `telnet localhost 9090`
+
+#### Simplest Option: Disable Bluetooth and Use USB Serial
+If you don't have a debugger, temporarily test with USB only:
+1. Comment out Bluetooth configs
+2. Use USB connection to test other features
 
 ### 3. Trigger the Bluetooth Issue
 1. With logging terminal open and connected
@@ -68,6 +76,10 @@ Key error indicators:
 ## Reverting Debug Mode
 After debugging, disable logging to save power and improve performance:
 1. Edit `config/totem.conf`
-2. Change `CONFIG_ZMK_USB_LOGGING=y` to `CONFIG_ZMK_USB_LOGGING=n`
-3. Remove or comment out the debug logging lines
-4. Rebuild and flash normal firmware
+2. Comment out or remove all the RTT and LOG config lines:
+   - `CONFIG_USE_SEGGER_RTT=y`
+   - `CONFIG_RTT_CONSOLE=y`
+   - `CONFIG_LOG=y`
+   - `CONFIG_LOG_BACKEND_RTT=y`
+   - etc.
+3. Rebuild and flash normal firmware
