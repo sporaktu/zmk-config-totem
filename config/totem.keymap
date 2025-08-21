@@ -85,7 +85,7 @@
         };
 
         system_layer {
-            bindings = <&mo 8>;
+            bindings = <&to 8>;
             key-positions = <20 31 30>;
         };
 
