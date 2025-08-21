@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "WebFetch(domain:www.reddit.com)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
