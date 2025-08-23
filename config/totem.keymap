@@ -265,19 +265,19 @@
 
         homerow_left {
             bindings = <
-        &trans    &trans    &kp ESC    &trans     &trans         &trans  &trans  &trans  &trans  &trans
-        &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp TAB        &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans    &trans     &trans     &key_repeat    &trans  &trans  &trans  &trans  &trans  &trans
-                            &trans     &trans     &trans         &trans  &trans  &trans
+        &trans    &trans    &kp ESC    &kp DEL      &kp BACKSPACE    &trans  &trans  &trans  &trans  &trans
+        &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT    &kp TAB          &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans     &key_repeat  &key_repeat      &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans     &trans       &trans           &trans  &trans  &trans
             >;
         };
 
         homerow_right {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans       &trans     &kp ESC    &trans    &trans
-        &trans  &trans  &trans  &trans  &trans    &kp TAB      &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI
-&trans  &trans  &trans  &trans  &trans  &trans    &key_repeat  &trans     &trans     &trans    &trans    &trans
-                        &trans  &trans  &trans    &trans       &trans     &trans
+        &trans  &trans  &trans  &trans  &trans    &kp BACKSPACE  &delete      &kp ESC    &trans    &trans
+        &trans  &trans  &trans  &trans  &trans    &kp TAB        &kp LSHFT    &kp LCTRL  &kp LALT  &kp LGUI
+&trans  &trans  &trans  &trans  &trans  &trans    &key_repeat    &key_repeat  &trans     &trans    &trans    &trans
+                        &trans  &trans  &trans    &trans         &trans       &trans
             >;
         };
 
