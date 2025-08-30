@@ -205,25 +205,25 @@
              &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P
              &kp A  &kp S  &kp D  &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI
 &lt 9 GRAVE  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
-                           &mo 1  &mo 7  &kp SPACE    &kp SPACE  &mo 8  &mo 6
+                           &mo 1  &mo 7  &kp SPACE    &kp SPACE  &mo 8  &mo 5
             >;
         };
 
         nav {
             bindings = <
-         &tog 2         &kp LEFT  &kp UP     &kp RIGHT  &kp PG_UP    &kp TAB    &kp LEFT  &kp UP    &kp RIGHT  &trans
+         &to 2          &kp LEFT  &kp UP     &kp RIGHT  &kp PG_UP    &kp TAB    &kp LEFT  &kp UP    &kp RIGHT  &trans
          &kp BACKSPACE  &kp HOME  &kp DOWN   &kp END    &kp PG_DN    &kp PG_UP  &kp HOME  &kp DOWN  &kp END    &trans
 &kp DEL  &trans         &trans    &kp LSHFT  &kp LALT   &kp TAB      &kp PG_DN  &trans    &trans    &trans     &trans  &trans
-                                  &trans     &trans     &trans       &trans     &trans    &trans
+                                  &to 0      &trans     &trans       &trans     &trans    &to 0
             >;
         };
 
         mouse {
             bindings = <
-         &trans          &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &msc SCRL_UP       &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &msc SCRL_RIGHT
+         &to 1           &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &msc SCRL_UP       &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &msc SCRL_RIGHT
          &kp BACKSPACE   &mkp MB2        &mmv MOVE_DOWN  &mkp MB1         &msc SCRL_DOWN     &msc SCRL_UP    &mkp MB1        &mmv MOVE_DOWN  &mkp MB2         &trans
 &kp DEL  &msc SCRL_LEFT  &mkp MB5        &mkp MB3        &mkp MB4         &msc SCRL_RIGHT    &msc SCRL_DOWN  &mkp MB4        &mkp MB3        &mkp MB5         &trans           &trans
-                                         &trans          &trans           &trans             &trans          &trans          &trans
+                                         &to 0           &trans           &trans             &trans          &trans          &to 0
             >;
         };
 
@@ -247,16 +247,16 @@
 
         number {
             bindings = <
-        &alt_tab  &trans  &trans  &kp LS(LBRC)          &kp LS(RBRC)             &kp EQUAL  &kp N7  &kp N8  &kp N9  &tog 6
+        &alt_tab  &trans  &trans  &kp LS(LBRC)          &kp LS(RBRC)             &kp EQUAL  &kp N7  &kp N8  &kp N9  &to 6
         &trans    &trans  &trans  &kp LBKT              &kp RBKT                 &kp MINUS  &kp N4  &kp N5  &kp N6  &kp BSPC
 &trans  &trans    &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp DOT    &kp N1  &kp N2  &kp N3  &kp N0    &kp DEL
-                          &trans  &trans                &trans                   &trans     &trans  &trans
+                          &to 0   &trans                &trans                   &trans     &trans  &to 0
             >;
         };
 
         symbol_shift {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &kp LS(EQUAL)   &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &trans
+        &trans  &trans  &trans  &trans  &trans    &kp LS(EQUAL)   &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &to 5
         &trans  &trans  &trans  &trans  &trans    &kp LS(MINUS)   &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp BACKSPACE
 &trans  &trans  &trans  &trans  &trans  &trans    &kp LS(PERIOD)  &kp LS(N1)        &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(N0)     &kp DEL
                         &trans  &trans  &trans    &trans          &trans            &trans
