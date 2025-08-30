@@ -202,16 +202,16 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-             &kp Q  &kp W  &kp E  &kp R  &kp T          &kp Y        &kp U  &kp I      &kp O    &kp P
-             &kp A  &kp S  &kp D  &kp F  &kp G          &kp H        &kp J  &kp K      &kp L    &kp SEMI
-&lt 9 GRAVE  &kp Z  &kp X  &kp C  &kp V  &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
-                           &mo 2  &mo 1  &lt 7 SPACE    &lt 8 SPACE  &mo 5  &mo 6
+             &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P
+             &kp A  &kp S  &kp D  &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI
+&lt 9 GRAVE  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
+                           &mo 1  &sl 7  &kp SPACE    &kp SPACE  &sl 8  &mo 6
             >;
         };
 
         nav {
             bindings = <
-         &trans         &kp LEFT  &kp UP     &kp RIGHT  &kp PG_UP    &kp TAB    &kp LEFT  &kp UP    &kp RIGHT  &trans
+         &tog 2         &kp LEFT  &kp UP     &kp RIGHT  &kp PG_UP    &kp TAB    &kp LEFT  &kp UP    &kp RIGHT  &trans
          &kp BACKSPACE  &kp HOME  &kp DOWN   &kp END    &kp PG_DN    &kp PG_UP  &kp HOME  &kp DOWN  &kp END    &trans
 &kp DEL  &trans         &trans    &kp LSHFT  &kp LALT   &kp TAB      &kp PG_DN  &trans    &trans    &trans     &trans  &trans
                                   &trans     &trans     &trans       &trans     &trans    &trans
@@ -247,9 +247,9 @@
 
         number {
             bindings = <
-        &alt_tab  &trans  &trans  &kp LS(LBRC)          &kp LS(RBRC)             &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp UNDER
+        &alt_tab  &trans  &trans  &kp LS(LBRC)          &kp LS(RBRC)             &kp EQUAL  &kp N7  &kp N8  &kp N9  &tog 6
         &trans    &trans  &trans  &kp LBKT              &kp RBKT                 &kp MINUS  &kp N4  &kp N5  &kp N6  &kp BSPC
-&trans  &trans    &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp DOT    &kp N1  &kp N2  &kp N3  &kp N0     &kp DEL
+&trans  &trans    &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp DOT    &kp N1  &kp N2  &kp N3  &kp N0    &kp DEL
                           &trans  &trans                &trans                   &trans     &trans  &trans
             >;
         };
