@@ -231,7 +231,7 @@
             bindings = <
          &kp TAB   &kp A  &kp W      &kp D      &kp E        &kp EQUAL    &kp N7  &kp N8  &kp N9  &trans
          &kp LALT  &kp Q  &kp S      &kp R      &kp F        &kp MINUS    &kp N4  &kp N5  &kp N6  &kp BACKSPACE
-&kp ESC  &mo 4     &kp Z  &kp X      &kp C      &kp G        &kp DOT      &kp N1  &kp N2  &kp N3  &kp N0         &kp DEL
+&kp ESC  &mo 4     &kp Z  &kp X      &kp C      &kp V        &kp DOT      &kp N1  &kp N2  &kp N3  &kp N0         &kp DEL
                           &kp LCTRL  &kp LSHFT  &kp SPACE    &lt 8 SPACE  &trans  &trans
             >;
         };
