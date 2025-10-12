@@ -238,19 +238,19 @@
 
         gaming_2 {
             bindings = <
-         &mo 3    &kp A  &kp W      &kp D      &kp T        &kp EQUAL    &kp N7  &kp N8  &kp N9  &trans
-         &mo 5    &kp Q  &kp S      &kp R      &kp G        &kp MINUS    &kp N4  &kp N5  &kp N6  &kp BACKSPACE
-&kp ESC  &kp TAB  &kp Z  &kp X      &kp C      &kp B        &kp DOT      &kp N1  &kp N2  &kp N3  &kp N0         &kp DEL
-                         &kp LCTRL  &kp LSHFT  &kp SPACE    &lt 9 SPACE  &trans  &trans
+         &mo 3         &kp A  &kp W      &kp D      &kp T        &kp EQUAL    &kp N7  &kp N8  &kp N9  &trans
+         &kp LEFT_ALT  &kp Q  &kp S      &kp R      &kp G        &kp MINUS    &kp N4  &kp N5  &kp N6  &kp BACKSPACE
+&kp ESC  &kp TAB       &kp Z  &kp X      &kp C      &kp B        &kp DOT      &kp N1  &kp N2  &kp N3  &kp N0         &kp DEL
+                              &kp LCTRL  &kp LSHFT  &kp SPACE    &lt 9 SPACE  &trans  &trans
             >;
         };
 
         gaming_3 {
             bindings = <
-         &mo 4    &kp A  &kp W      &kp D      &kp NUMBER_1    &kp EQUAL    &kp N7  &kp N8  &kp N9  &trans
-         &mo 3    &kp Q  &kp S      &kp R      &kp NUMBER_2    &kp MINUS    &kp N4  &kp N5  &kp N6  &kp BACKSPACE
-&kp ESC  &kp TAB  &kp Z  &kp X      &kp C      &kp NUMBER_3    &kp DOT      &kp N1  &kp N2  &kp N3  &kp N0         &kp DEL
-                         &kp LCTRL  &kp LSHFT  &kp SPACE       &lt 9 SPACE  &trans  &trans
+         &kp LEFT_ALT  &kp A  &kp W      &kp D      &kp NUMBER_1    &kp EQUAL    &kp N7  &kp N8  &kp N9  &trans
+         &mo 3         &kp Q  &kp S      &kp R      &kp NUMBER_2    &kp MINUS    &kp N4  &kp N5  &kp N6  &kp BACKSPACE
+&kp ESC  &kp TAB       &kp Z  &kp X      &kp C      &kp NUMBER_3    &kp DOT      &kp N1  &kp N2  &kp N3  &kp N0         &kp DEL
+                              &kp LCTRL  &kp LSHFT  &kp SPACE       &lt 9 SPACE  &trans  &trans
             >;
         };
 
