@@ -85,7 +85,7 @@
         };
 
         system_layer {
-            bindings = <&to 10>;
+            bindings = <&to 11>;
             key-positions = <20 32 34 33>;
         };
 
@@ -154,42 +154,6 @@
             key-positions = <1 2 3 34>;
             layers = <0>;
         };
-
-        gaming_t {
-            bindings = <&kp T>;
-            key-positions = <0 4>;
-            layers = <3>;
-        };
-
-        gaming_g {
-            bindings = <&kp G>;
-            key-positions = <0 14>;
-            layers = <3>;
-        };
-
-        gaming_b {
-            bindings = <&kp B>;
-            key-positions = <0 25>;
-            layers = <3>;
-        };
-
-        gaming_1 {
-            bindings = <&kp NUMBER_1>;
-            key-positions = <4 10>;
-            layers = <3>;
-        };
-
-        gaming_2 {
-            bindings = <&kp NUMBER_2>;
-            key-positions = <10 14>;
-            layers = <3>;
-        };
-
-        gaming_3 {
-            bindings = <&kp NUMBER_3>;
-            key-positions = <10 25>;
-            layers = <3>;
-        };
     };
 
     macros {
@@ -238,10 +202,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-             &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P
-             &kp A  &kp S  &kp D  &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI
-&lt 9 GRAVE  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
-                           &mo 1  &mo 7  &kp SPACE    &kp SPACE  &mo 8  &mo 5
+              &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P
+              &kp A  &kp S  &kp D  &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI
+&lt 10 GRAVE  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
+                            &mo 1  &mo 8  &kp SPACE    &kp SPACE  &mo 9  &mo 6
             >;
         };
 
@@ -265,25 +229,34 @@
 
         gaming {
             bindings = <
-         &kp TAB   &kp A  &kp W      &kp D      &kp E        &kp EQUAL    &kp N7  &kp N8  &kp N9  &trans
-         &kp LALT  &kp Q  &kp S      &kp R      &kp F        &kp MINUS    &kp N4  &kp N5  &kp N6  &kp BACKSPACE
-&kp ESC  &mo 4     &kp Z  &kp X      &kp C      &kp V        &kp DOT      &kp N1  &kp N2  &kp N3  &kp N0         &kp DEL
-                          &kp LCTRL  &kp LSHFT  &kp SPACE    &lt 8 SPACE  &trans  &trans
+         &mo 4    &kp A  &kp W      &kp D      &kp E        &kp EQUAL    &kp N7  &kp N8  &kp N9  &trans
+         &mo 5    &kp Q  &kp S      &kp R      &kp F        &kp MINUS    &kp N4  &kp N5  &kp N6  &kp BACKSPACE
+&kp ESC  &kp TAB  &kp Z  &kp X      &kp C      &kp V        &kp DOT      &kp N1  &kp N2  &kp N3  &kp N0         &kp DEL
+                         &kp LCTRL  &kp LSHFT  &kp SPACE    &lt 9 SPACE  &trans  &trans
             >;
         };
 
-        gaming_num {
+        gaming_2 {
             bindings = <
-        &trans  &kp A   &kp W   &kp D   &kp N1    &trans  &trans  &trans  &trans  &trans
-        &trans  &kp V   &kp S   &kp M   &kp N2    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp B   &kp N   &kp N3    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+         &mo 3    &kp A  &kp W      &kp D      &kp T        &kp EQUAL    &kp N7  &kp N8  &kp N9  &trans
+         &mo 5    &kp Q  &kp S      &kp R      &kp G        &kp MINUS    &kp N4  &kp N5  &kp N6  &kp BACKSPACE
+&kp ESC  &kp TAB  &kp Z  &kp X      &kp C      &kp B        &kp DOT      &kp N1  &kp N2  &kp N3  &kp N0         &kp DEL
+                         &kp LCTRL  &kp LSHFT  &kp SPACE    &lt 9 SPACE  &trans  &trans
+            >;
+        };
+
+        gaming_3 {
+            bindings = <
+         &mo 4    &kp A  &kp W      &kp D      &kp NUMBER_1    &kp EQUAL    &kp N7  &kp N8  &kp N9  &trans
+         &mo 3    &kp Q  &kp S      &kp R      &kp NUMBER_2    &kp MINUS    &kp N4  &kp N5  &kp N6  &kp BACKSPACE
+&kp ESC  &kp TAB  &kp Z  &kp X      &kp C      &kp NUMBER_3    &kp DOT      &kp N1  &kp N2  &kp N3  &kp N0         &kp DEL
+                         &kp LCTRL  &kp LSHFT  &kp SPACE       &lt 9 SPACE  &trans  &trans
             >;
         };
 
         number {
             bindings = <
-        &alt_tab  &trans  &trans  &kp LS(LBRC)          &kp LS(RBRC)             &kp EQUAL  &kp N7  &kp N8  &kp N9  &to 6
+        &alt_tab  &trans  &trans  &kp LS(LBRC)          &kp LS(RBRC)             &kp EQUAL  &kp N7  &kp N8  &kp N9  &to 7
         &trans    &trans  &trans  &kp LBKT              &kp RBKT                 &kp MINUS  &kp N4  &kp N5  &kp N6  &kp BSPC
 &trans  &trans    &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp DOT    &kp N1  &kp N2  &kp N3  &kp N0    &kp DEL
                           &to 0   &trans                &trans                   &trans     &trans  &to 0
@@ -292,7 +265,7 @@
 
         symbol_shift {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &kp LS(EQUAL)   &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &to 5
+        &trans  &trans  &trans  &trans  &trans    &kp LS(EQUAL)   &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &to 6
         &trans  &trans  &trans  &trans  &trans    &kp LS(MINUS)   &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp BACKSPACE
 &trans  &trans  &trans  &trans  &trans  &trans    &kp LS(PERIOD)  &kp LS(N1)        &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(N0)     &kp DEL
                         &trans  &trans  &trans    &trans          &trans            &trans
