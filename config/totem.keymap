@@ -154,6 +154,42 @@
             key-positions = <1 2 3 34>;
             layers = <0>;
         };
+
+        gaming_t {
+            bindings = <&kp T>;
+            key-positions = <0 4>;
+            layers = <3>;
+        };
+
+        gaming_g {
+            bindings = <&kp G>;
+            key-positions = <0 14>;
+            layers = <3>;
+        };
+
+        gaming_b {
+            bindings = <&kp B>;
+            key-positions = <0 25>;
+            layers = <3>;
+        };
+
+        gaming_1 {
+            bindings = <&kp NUMBER_1>;
+            key-positions = <4 10>;
+            layers = <3>;
+        };
+
+        gaming_2 {
+            bindings = <&kp NUMBER_2>;
+            key-positions = <10 14>;
+            layers = <3>;
+        };
+
+        gaming_3 {
+            bindings = <&kp NUMBER_3>;
+            key-positions = <10 25>;
+            layers = <3>;
+        };
     };
 
     macros {
