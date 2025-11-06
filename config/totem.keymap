@@ -69,89 +69,29 @@
             require-prior-idle-ms = <100>;
         };
 
-        to_gaming {
-            bindings = <&to 3>;
-            key-positions = <20 21>;
-        };
-
         quote {
             bindings = <&kp SQT>;
-            key-positions = <18 9>;
-        };
-
-        dash {
-            bindings = <&kp MINUS>;
-            key-positions = <25 26>;
-        };
-
-        system_layer {
-            bindings = <&to 11>;
-            key-positions = <20 32 34 33>;
+            key-positions = <18 19>;
         };
 
         // Left hand modifiers with left space
-
-        left_gui {
-            bindings = <&kp LGUI>;
-            key-positions = <10 34>;  // A + left space
-            timeout-ms = <50>;
-            layers = <0>;  // Only on base layer
-        };
-
-        left_alt {
-            bindings = <&kp LALT>;
-            key-positions = <11 34>;  // S + left space
-            timeout-ms = <50>;
-            layers = <0>;  // Only on base layer
-        };
-
-        left_ctrl {
-            bindings = <&kp LCTRL>;
-            key-positions = <12 34>;  // D + left space
-            timeout-ms = <50>;
-            layers = <0>;  // Only on base layer
-        };
-
-        left_shift {
-            bindings = <&kp LSHFT>;
-            key-positions = <13 34>;  // F + left space
-            timeout-ms = <50>;
-            layers = <0>;  // Only on base layer
-        };
-
         // Right hand modifiers with right space
-
-        right_shift {
-            bindings = <&kp RSHFT>;
-            key-positions = <16 35>;  // J + right space
-            timeout-ms = <50>;
-            layers = <0>;  // Only on base layer
-        };
-
-        right_ctrl {
-            bindings = <&kp RCTRL>;
-            key-positions = <17 35>;  // K + right space
-            timeout-ms = <50>;
-            layers = <0>;  // Only on base layer
-        };
-
-        right_alt {
-            bindings = <&kp RALT>;
-            key-positions = <18 35>;  // L + right space
-            timeout-ms = <50>;
-            layers = <0>;  // Only on base layer
-        };
-
-        right_gui {
-            bindings = <&kp RGUI>;
-            key-positions = <19 35>;  // ; + right space
-            timeout-ms = <50>;
-            layers = <0>;  // Only on base layer
-        };
 
         activate-gaming {
             bindings = <&to 3>;
             key-positions = <1 2 3 34>;
+            layers = <0>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <10 11>;
+            layers = <0>;
+        };
+
+        grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <21 22>;
             layers = <0>;
         };
     };
@@ -202,10 +142,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P
-              &kp A  &kp S  &kp D  &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI
-&lt 10 GRAVE  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
-                            &mo 1  &mo 8  &kp SPACE    &kp SPACE  &mo 9  &mo 6
+              &kp Q     &kp W  &kp E  &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P
+              &kp A     &kp S  &kp D  &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI
+&lt 10 GRAVE  &lt 11 Z  &kp X  &kp C  &kp V  &lt 10 B     &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
+                               &mo 1  &mo 8  &kp SPACE    &kp SPACE  &mo 9  &mo 6
             >;
         };
 
@@ -316,10 +256,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
-        &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                 &trans        &trans  &trans    &trans  &trans  &trans
+        &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans        &trans          &trans  &kp F7  &kp F8  &kp F9  &kp F12
+        &bootloader  &bt BT_NXT  &bt BT_SEL 3  &bt BT_SEL 4  &trans          &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans       &bt BT_PRV  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                                 &trans        &trans        &trans          &trans  &trans  &trans
             >;
         };
     };
